@@ -1,3 +1,26 @@
 body {
     background-color: tomato;
 }
+
+#navLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7678fc;
+    border: 1px solid black;
+}
+
+.navtab {
+    float: left;
+    display: flex;
+    height: 20px;
+    text-align: center;
+    width: 95px;
+    padding: 10px 20px;
+    border-right: 1px solid;
+}
+
+.navtab:hover{
+    transform: scale(1.1);
+}
