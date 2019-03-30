@@ -5,6 +5,7 @@ const assignments = [
         dueDate: '03/05/2019',
         topic: 'HTML/CSS',
         notes: 'Use flexbox',
+        available: true,
         assignmentUrl: 'www.google.com',
     },
 
@@ -12,7 +13,8 @@ const assignments = [
         title: 'Bio Page',
         dueDate: '06/20/2020',
         topic: 'React',
-        notes: 'use functions',
+        technologiesUsed: 'use functions',
+        available: true,
         assignmentUrl: 'www.freecodecamp.com',
     },
 
@@ -20,7 +22,8 @@ const assignments = [
         title: 'Song Maker',
         dueDate: '09/05/2019',
         topic: 'C#/.NET',
-        notes: 'use SQL',
+        technologiesUsed: 'use SQL',
+        available: true,
         assignmentUrl: 'www.google.com',
     },
 
@@ -28,7 +31,8 @@ const assignments = [
         title: 'Capstone',
         dueDate: '08/05/2019',
         topic: 'HTML/CSS',
-        notes: 'Use flexbox',
+        technologiesUsed: 'Use flexbox',
+        available: true,
         assignmentUrl: 'www.google.com',
     },
 
@@ -36,7 +40,8 @@ const assignments = [
         title: 'Social Media Site',
         dueDate: '03/05/2024',
         topic: 'HTML/CSS and JS',
-        notes: 'Use flexbox and React',
+        technologiesUsed: 'Use flexbox and React',
+        available: true,
         assignmentUrl: 'www.google.com',
     }
 
@@ -51,17 +56,20 @@ const printToDom = (divId, textToPrint) => {
 
 const buildAssignmentsCards = () => {
     let domstring = '';
-    for(let i = 0; i<assignments.length; i++){
-        domstring += `<div id="assignment">`
-        domstring += `<h3>${assignments[i].title}<h3>`;
-        domstring += `<strong> Due Date:<p>${assignments[i].dueDate}</strong></p>`;
-        domstring += `<p class="topic">${assignments[i].topic}</p>`;
-        domstring += `<p>${assignments[i].notes}</p>`;
-        domstring += `<p>${assignments[i].assignmentUrl}</p>`;
+    assignments.forEach((assignment) => {
+        domstring += `<div class="card">`
+        domstring += `<h3>${assignment.title}<h3>`;
+        domstring += `<strong> Due Date:<p>${assignment.dueDate}</strong></p>`;
+        domstring += `<p class="topic">${assignment.topic}</p>`;
+        domstring += `<p>${assignment.technologiesUsed}</p>`;
+        domstring += `<p>${assignment.assignmentUrl}</p>`;
         domstring += `</div>`
-    }
-    printToDom('assignment', domstring);
+    });
+
+    printToDom('projectsPage', domstring);
 };
+
+
 
 
 
@@ -69,7 +77,7 @@ const buildAssignmentsCards = () => {
 
 const init = () => {
 
-    buildAssignmentsCards();
+    buildAssignmentsCards(assignments);
 };
 
 init();
