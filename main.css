@@ -1,3 +1,22 @@
 body {
     background-color: tomato;
 }
+
+.bg-light {
+    background-color: #17a2b8;
+    /* border: 1px solid black; */
+}
+
+.navbar navbar-expand-lg navbar-light bg-light {
+    float: left;
+    display: flex;
+    height: 20px;
+    text-align: center;
+    width: 95px;
+    padding: 10px 20px;
+    border-right: 1px solid;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
