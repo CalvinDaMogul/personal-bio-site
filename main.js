@@ -57,19 +57,29 @@ const printToDom = (divId, textToPrint) => {
 const buildAssignmentsCards = () => {
     let domstring = '';
     assignments.forEach((assignment) => {
-        domstring += `<div class="card">`
-        domstring += `<h3>${assignment.title}<h3>`;
+        domstring += `<div class="card" style="width: 18rem;">`
+        domstring += `<img class="card-img-top" src=${assignment.assignmentUrl} alt="Card image cap">`;
+        domstring += `<div class="card-body">`;
+        domstring += `<h3 class="card-title">${assignment.title}<h3>`;
         domstring += `<strong> Due Date:<p>${assignment.dueDate}</strong></p>`;
-        domstring += `<p class="topic">${assignment.topic}</p>`;
-        domstring += `<p>${assignment.technologiesUsed}</p>`;
-        domstring += `<p>${assignment.assignmentUrl}</p>`;
+        domstring += `<p class="card-text">${assignment.topic}</p>`;
+        domstring += `<p class="card-text">${assignment.technologiesUsed}</p>`;
+        domstring += `<p class="card-text">${assignment.assignmentUrl}</p>`;
+        domstring +=  `<a href="#" class="btn btn-primary">click</a>`
+        domstring += `</div>`
         domstring += `</div>`
     });
 
     printToDom('projectsPage', domstring);
 };
 
-
+// {<div class="card" style="width: 18rem;"> */}
+//   <div class="card-body">
+//     <h5 class="card-title">Card title</h5>
+//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//     <a href="#" class="btn btn-primary">Go somewhere</a>
+//   </div>
+// </div>
 
 
 
@@ -77,7 +87,7 @@ const buildAssignmentsCards = () => {
 
 const init = () => {
 
-    buildAssignmentsCards(assignments);
+    buildAssignmentsCards();
 };
 
 init();
