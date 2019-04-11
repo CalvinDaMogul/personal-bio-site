@@ -58,13 +58,14 @@ const buildAssignmentsCards = () => {
     let domstring = '';
     assignments.forEach((assignment) => {
         domstring += `<div class="card" style="width: 18rem;">`
-        domstring += `<div class="card-body">`
+        domstring += `<img class="card-img-top" src=${assignment.assignmentUrl} alt="Card image cap">`;
+        domstring += `<div class="card-body">`;
         domstring += `<h3 class="card-title">${assignment.title}<h3>`;
         domstring += `<strong> Due Date:<p>${assignment.dueDate}</strong></p>`;
-        domstring += `<p class="topic">${assignment.topic}</p>`;
-        domstring += `<p>${assignment.technologiesUsed}</p>`;
-        domstring += `<p>${assignment.assignmentUrl}</p>`;
-        domstring +=  `<a href="#" class="btn btn-primary">Go somewhere</a>`
+        domstring += `<p class="card-text">${assignment.topic}</p>`;
+        domstring += `<p class="card-text">${assignment.technologiesUsed}</p>`;
+        domstring += `<p class="card-text">${assignment.assignmentUrl}</p>`;
+        domstring +=  `<a href="#" class="btn btn-primary">click</a>`
         domstring += `</div>`
         domstring += `</div>`
     });
@@ -86,7 +87,7 @@ const buildAssignmentsCards = () => {
 
 const init = () => {
 
-    buildAssignmentsCards(assignments);
+    buildAssignmentsCards();
 };
 
 init();
