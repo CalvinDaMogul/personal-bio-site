@@ -1,7 +1,7 @@
 
 const assignments = [
     {
-        title: 'product cards',
+        title: 'Product Cards',
         dueDate: '03/05/2019',
         topic: 'HTML/CSS',
         notes: 'Use flexbox',
@@ -10,8 +10,8 @@ const assignments = [
     },
 
     {
-        title: 'Bio Page',
-        dueDate: '06/20/2020',
+        title: 'Pet Adoption',
+        dueDate: '03/19/2019',
         topic: 'React',
         technologiesUsed: 'use functions',
         available: true,
@@ -19,8 +19,8 @@ const assignments = [
     },
 
     {
-        title: 'Song Maker',
-        dueDate: '09/05/2019',
+        title: 'Temp Converter',
+        dueDate: '03/23/2019',
         topic: 'C#/.NET',
         technologiesUsed: 'use SQL',
         available: true,
@@ -28,8 +28,8 @@ const assignments = [
     },
 
     {
-        title: 'Capstone',
-        dueDate: '08/05/2019',
+        title: 'Sorting Hat',
+        dueDate: '03/26/2019',
         topic: 'HTML/CSS',
         technologiesUsed: 'Use flexbox',
         available: true,
@@ -37,8 +37,17 @@ const assignments = [
     },
 
     {
-        title: 'Social Media Site',
-        dueDate: '03/05/2024',
+        title: 'Favorite Places',
+        dueDate: '04/09/2019',
+        topic: 'HTML/CSS and JS',
+        technologiesUsed: 'Use flexbox and React',
+        available: true,
+        assignmentUrl: 'www.google.com',
+    },
+
+    {
+        title: 'Tamagotchi',
+        dueDate: '04/23/2019',
         topic: 'HTML/CSS and JS',
         technologiesUsed: 'Use flexbox and React',
         available: true,
@@ -47,6 +56,8 @@ const assignments = [
 
    
 ];
+
+
 
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);

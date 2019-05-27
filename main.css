@@ -1,6 +1,11 @@
 body {
-    background-color: tomato;
+    background-color: #F44708;
 }
+
+#font{
+    text-align: center;
+}
+
 
 .bg-light {
     background-color: #17a2b8;
@@ -32,5 +37,5 @@ body {
 }
 
 .card-body {
-    background-color: blueviolet
+    background-color: #A10702;
 }
