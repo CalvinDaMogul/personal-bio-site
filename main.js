@@ -3,37 +3,37 @@ const assignments = [
     {
         title: 'Product Cards',
         dueDate: '03/05/2019',
-        topic: 'HTML/CSS',
-        notes: 'Use flexbox',
+        topic: 'Filter',
+        technologiesUsed: 'use functions',
         available: true,
-        assignmentUrl: 'www.google.com',
+        assignmentUrl: 'www.chrome.com',
     },
 
     {
         title: 'Pet Adoption',
         dueDate: '03/19/2019',
-        topic: 'React',
-        technologiesUsed: 'use functions',
+        topic: 'Filter',
+        technologiesUsed: 'HTML/CSS and JavaScript',
         available: true,
-        assignmentUrl: 'www.freecodecamp.com',
+        assignmentUrl: 'www.chrome.com',
     },
 
     {
         title: 'Temp Converter',
         dueDate: '03/23/2019',
         topic: 'C#/.NET',
-        technologiesUsed: 'use SQL',
+        technologiesUsed: 'HTML/CSS and JavaScript',
         available: true,
-        assignmentUrl: 'www.google.com',
+        assignmentUrl: 'www.chrome.com',
     },
 
     {
         title: 'Sorting Hat',
         dueDate: '03/26/2019',
         topic: 'HTML/CSS',
-        technologiesUsed: 'Use flexbox',
+        technologiesUsed: 'HTML/CSS and JavaScript',
         available: true,
-        assignmentUrl: 'www.google.com',
+        assignmentUrl: 'www.chrome.com',
     },
 
     {
@@ -42,16 +42,16 @@ const assignments = [
         topic: 'HTML/CSS and JS',
         technologiesUsed: 'Use flexbox and React',
         available: true,
-        assignmentUrl: 'www.google.com',
+        assignmentUrl: 'www.chrome.com',
     },
 
     {
         title: 'Tamagotchi',
         dueDate: '04/23/2019',
         topic: 'HTML/CSS and JS',
-        technologiesUsed: 'Use flexbox and React',
+        technologiesUsed: 'JavaScript',
         available: true,
-        assignmentUrl: 'www.google.com',
+        assignmentUrl: 'www.chrome.com',
     }
 
    
