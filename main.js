@@ -68,7 +68,7 @@ const printToDom = (divId, textToPrint) => {
 const buildAssignmentsCards = () => {
     let domstring = '';
     assignments.forEach((assignment) => {
-        domstring += `<div class="card" style="width: 18rem;">`
+        domstring += `<div class="card" style="width: 18rem">`;
         // domstring += `<img class="card-img-top" ${assignment.assignmentUrl} alt="Card image cap">`;
         domstring += `<div class="card-body">`;
         domstring += `<h3 class="card-title">${assignment.title}<h3>`;
@@ -85,9 +85,9 @@ const buildAssignmentsCards = () => {
 };
 
 const navBtns = () => {
-    document.getElementById('bioPage').addEventListener('click', bioClick);
-    document.getElementById('technologiesPage').addEventListener('click', techClick);
-    document.getElementById('font').addEventListener('click', projectsClick);
+    document.getElementById('bioPage').addEventListener('click', buildAssignmentsCards);
+    document.getElementById('technologiesPage').addEventListener('click', buildAssignmentsCards);
+    document.getElementById('font').addEventListener('click', buildAssignmentsCards);
     };
 
 
