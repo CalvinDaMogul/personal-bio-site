@@ -1,5 +1,5 @@
 body {
-    background-color: #F44708;
+    background-color: #EEFCCE;
 }
 
 #font{
@@ -37,7 +37,9 @@ body {
 }
 
 .card-body {
-    background-color: #A10702;
+    background-color: #7B7554;
+    margin: 3px;
+
 }
 
 .pic {
@@ -45,6 +47,7 @@ body {
     width: 180;
     margin: 0 auto;
     display: block;
+    border-style: solid;
 }
 
 .aboutMe{
@@ -53,4 +56,8 @@ body {
     text-align: justify;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.fab {
+    margin: 4px;
 }
