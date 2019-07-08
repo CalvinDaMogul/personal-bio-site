@@ -10,7 +10,7 @@ const buildAssignmentsCards = () => {
     let domstring = '';
     assignments.forEach((assignment) => {
       domstring += '<div class="card" style="width: 18rem">';
-      // domstring += `<img class="card-img-top" ${assignment.assignmentUrl} alt="Card image cap">`;
+      domstring += `<img class="card-img-top" ${assignment.imageUrl} alt="Card image cap">`;
       domstring += '<div class="card-body">';
       domstring += `<h3 class="card-title">Title: ${assignment.title}<h3>`;
       // domstring += `<strong> Due Date:<p>${assignment.dueDate}</strong></p>`;
