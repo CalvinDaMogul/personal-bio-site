@@ -1,4 +1,4 @@
-src/helpers/apiKeys.json
+src/javascripts/helpers/apiKeys.json
 package-lock.json
 node_modules/
 dist/

@@ -32,14 +32,6 @@ const navBtns = () => {
   document.getElementById('font').addEventListener('click', buildAssignmentsCards);
 };
 
-// const getProjects = (uid) => {
-//   mainData.getAssignmentsByUid(uid)
-//     .then((assignments) => {
-//       console.error(assignments);
-//       buildAssignmentsCards(assignments);
-//     })
-//     .catch(err => console.error('no movies here', err));
-// };
 
 const init = () => {
   buildAssignmentsCards();
