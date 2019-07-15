@@ -1,5 +1,5 @@
 import axios from 'axios';
-import apiKeys from './apiKeys';
+import apiKeys from './apiKeys.json';
 
 const firebaseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -13,7 +13,6 @@ const getAssignmentsByUid = () => new Promise((resolve, reject) => {
         assignments.push(assignmentResults[assignmentsId]);
       });
       resolve(assignments);
-      console.error(assignments);
     })
     .catch(err => reject(err));
 });

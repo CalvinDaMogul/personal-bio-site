@@ -1,32 +1,38 @@
 {
-  "assignments": [{
+  "assignment1": {
     "title": "PurpleMonkeyDishwashr",
     "topic": "JavaScript",
     "technologiesUsed": "Vanilla JavaScript", 
     "assignmentUrl": "https://purplemonkeydishwasher.firebaseapp.com",
     "assignmentUrl2": "https://github.com/nss-evening-cohort-9/foundations-group-project-purplemonkeydishwashr",
-    "imageUrl":"./img/Purple Monkey Dishwasher.JPG",
-    "id": "project1",
+    "imageUrl":"https://github.com/CalvinDaMogul/personalBioSite/blob/master/img/Purple%20Monkey%20Dishwasher.JPG?raw=true",
     "uid": "0001"
   },
-  {
+  "assignment2": {
     "title": "Pet Adoption",
     "topic": "JavaScript",
     "technologiesUsed": "Vanilla JavaScript", 
     "assignmentUrl": "https://pet-adoption-895aa.firebaseapp.com/",
     "assignmentUrl2": "https://github.com/nss-evening-cohort-9/foundations-group-project-purplemonkeydishwashr",
-    "imageUrl":"./img/Pet Adoption.JPG",
-    "id": "project2",
+    "imageUrl":"https://github.com/CalvinDaMogul/personalBioSite/blob/master/img/Pet%20Adoption.JPG?raw=true",
     "uid": "0002"
   },
- {
+  "assignment3": {
+      "title": "Chatty Tully",
+      "topic": "JavaScript/Webpack Config",
+      "technologiesUsed":"JavaScript",
+      "assignmentUrl":"https://chatty-tully.firebaseapp.com/",
+      "assignmentUrl2":"https://github.com/CalvinDaMogul/chatty-house-tully",
+      "imageUrl": "https://i.ibb.co/LY3jZth/Chatty.png",
+      "uid": "004"
+    },
+  "assignment4": {
     "title": "Doggy Day Care",
     "topic": "JavaScript/React",
     "technologiesUsed": "React", 
     "assignmentUrl": "www.chrome.comhttps://doggydaycare-e5942.firebaseapp.com/",
     "assignmentUrl2": "https://github.com/CalvinDaMogul/doggy_day_care",
-    "imageUrl":"./img/Doggy Day Care.JPG",
-    "id": "project3",
+    "imageUrl":"https://raw.githubusercontent.com/CalvinDaMogul/personal-bio-site/master/src/img/Doggy%20Day%20Care.JPG",
     "uid": "0003"
-  }]
+  }
 }
