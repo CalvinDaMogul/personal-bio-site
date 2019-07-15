@@ -1,15 +1,17 @@
-// import firebase from 'firebase/app';
 import 'firebase/auth';
+
 
 import mainData from './helpers/Data/mainData';
 import util from './helpers/util';
+
+import '../Styles/main.scss';
 
 
 const buildAssignmentsCards = () => {
   mainData.getAssignmentsByUid().then((assignments) => {
     let domstring = '';
     assignments.forEach((assignment) => {
-      domstring += '<div class="card" style="width: 18rem">';
+      domstring += '<div class="card col-4" style="width: 18rem">';
       domstring += `<img class="card-img-top" ${assignment.imageUrl} alt="Card image cap">`;
       domstring += '<div class="card-body">';
       domstring += `<h3 class="card-title">Title: ${assignment.title}<h3>`;
